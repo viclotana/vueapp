@@ -1,6 +1,6 @@
 <template>
     <div class="test">
-        <span v-html="title"></span>
+        <h1>{{title}}</h1>
         <p>{{user.firstName}}</p>
         <p v-text="user.firstName"></p>
     </div>
@@ -12,7 +12,7 @@ export default {
     name: 'test',
     data(){
         return{
-            title: '<h1>Hello Man</h1>',
+            title: 'Hello Man',
             user: {
                 firstName: 'Lotanna',
                 lastName: 'Nwose'
