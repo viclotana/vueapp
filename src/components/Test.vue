@@ -16,7 +16,8 @@ export default {
             user: {
                 firstName: 'Lotanna',
                 lastName: 'Nwose'
-            }
+            },
+            showName: true
         }
     }
 }
