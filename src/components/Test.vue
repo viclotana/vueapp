@@ -17,7 +17,10 @@ export default {
                 firstName: 'Lotanna',
                 lastName: 'Nwose'
             },
-            showName: false
+            showName: false,
+            items:[
+                {title: 'Item 1'},
+            ]
         }
     }
 }
