@@ -7,6 +7,7 @@
         <ul>
             <li v-for="item in items" v-bind:key="item">{{item.title}}</li>
         </ul>
+        <button v-on:click="greet">Say Greeting</button>
     </div>
 </template>
 
