@@ -17,7 +17,7 @@ export default {
                 firstName: 'Lotanna',
                 lastName: 'Nwose'
             },
-            showName: true
+            showName: false
         }
     }
 }
