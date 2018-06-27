@@ -37,8 +37,8 @@ export default {
         greet: function(greeting){
             alert(greeting);
         },
-        pressKey: function(){
-            console.log('pressed');
+        pressKey: function(event){
+            console.log(event.target.value);
         }
     }
 }
