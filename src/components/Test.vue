@@ -8,6 +8,7 @@
             <li v-for="item in items" v-bind:key="item">{{item.title}}</li>
         </ul>
         <button v-on:click="greet('hi man!')">Say Greeting</button>
+        <br />
         <input type="text" v-on:keyup="pressKey">
     </div>
 </template>
