@@ -14,7 +14,7 @@
         <label>First Name:</label> <input type="text" v-model="user.firstName">
         <br />
         <label>Last Name:</label> <input type="text" v-model="user.lastName">
-        <h3>{{fullname}}</h3>
+        <h3>{{fullName}}</h3>
     </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
                 firstName: 'Lotanna',
                 lastName: 'Nwose'
             },
-            showName: false,
+            showName: true,
             items:[
                 {title: 'Item 1'},
                 {title: 'Item 2'},
@@ -50,8 +50,8 @@ export default {
         }
     },
     computed:{
-        fullname: function(){
-            return this.firstName+""+this.lastName
+        fullName: function(){
+            return this.user.firstName+" "+this.user.lastName;
         }
     }
 }
