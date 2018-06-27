@@ -7,7 +7,7 @@
         <ul>
             <li v-for="item in items" v-bind:key="item">{{item.title}}</li>
         </ul>
-        <button v-on:click="greet">Say Greeting</button>
+        <button v-on:click="greet('hi man!')">Say Greeting</button>
     </div>
 </template>
 
@@ -29,6 +29,11 @@ export default {
                 {title: 'Item 3'},
                 {title: 'Item 4'}
             ]
+        }
+    },
+    methods:{
+        greet: function(greeting){
+            alert(greeting);
         }
     }
 }
