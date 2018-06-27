@@ -1,6 +1,9 @@
 <template>
     <div class="users">
        <h1>Users</h1>
+       <form v-on:submit="addUser">
+           
+       </form>
        <ul>
            <li v-for="user in users" v-bind:key="user.name">
                {{user.name}}:{{user.email}}
@@ -16,6 +19,7 @@ export default {
     
     data(){
         return {
+            newUser: {},
             users: [
                 {
                     name: 'Lotanna Nwose',
