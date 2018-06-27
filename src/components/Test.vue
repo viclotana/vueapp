@@ -13,7 +13,8 @@
         <hr>
         <label>First Name:</label> <input type="text" v-model="user.firstName">
         <br />
-        
+        <label>Last Name:</label> <input type="text" v-model="user.lastName">
+        <h3>{{fullName}}</h3>
     </div>
 </template>
 
@@ -47,7 +48,8 @@ export default {
         hitEnter: function (){
             console.log('you hit enter man!');
         }
-    }
+    },
+    computed:
 }
 </script>
 <style scoped>
