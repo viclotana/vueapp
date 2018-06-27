@@ -22,6 +22,12 @@
 <script>
 export default {
     name: 'test',
+    props:{
+        message: {
+            type: string,
+            default: 'hahahahahah'
+        }
+    },
     data(){
         return{
             title: 'Hello Man',
