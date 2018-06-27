@@ -1,6 +1,6 @@
 <template>
     <div class="users">
-       
+       <h1>Users</h1>
     </div>
 </template>
 
@@ -11,7 +11,13 @@ export default {
     
     data(){
         return {
-
+            users: [
+                {
+                    name: 'Lotanna Nwose',
+                    email: 'vic@gmail.com',
+                    contacted: false
+                }
+            ]
         }
     },
     methods:{
