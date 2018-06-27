@@ -1,6 +1,11 @@
 <template>
     <div class="users">
        <h1>Users</h1>
+       <ul>
+           <li v-for="user in users" v-bind:key="user.name">
+               {{user.name}}:{{user.email}}
+           </li>
+       </ul>
     </div>
 </template>
 
