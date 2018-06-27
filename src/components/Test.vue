@@ -5,7 +5,7 @@
         <p v-if="showName">{{user.firstName}}</p>
         <p v-else>Nobody</p>
         <ul>
-            <li v-for="item in items" v-bind:key="item">{{item.title}}</li>
+            <li v-for="item in items" v-bind:key="item.title">{{item.title}}</li>
         </ul>
         <button v-on:click="greet">Say Greeting</button>
         <br />
