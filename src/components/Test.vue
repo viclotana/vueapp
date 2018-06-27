@@ -15,6 +15,7 @@
         <br />
         <label>Last Name:</label> <input type="text" v-model="user.lastName">
         <h3>{{fullName}}</h3>
+        <h2>{{message}}</h2>
     </div>
 </template>
 
@@ -24,8 +25,8 @@ export default {
     name: 'test',
     props:{
         message: {
-            type: string,
-            default: 'hahahahahah'
+            type: String,
+            default: 'hahahahaha'
         }
     },
     data(){
