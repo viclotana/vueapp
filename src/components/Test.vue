@@ -10,6 +10,10 @@
         <button v-on:click="greet">Say Greeting</button>
         <br />
         <input type="text" v-on:keyup="pressed" v-on:keyup.enter="hitEnter">
+        <hr>
+        <label>First Name:</label> <input type="text" v-model="user.firstName">
+        <br />
+        
     </div>
 </template>
 
