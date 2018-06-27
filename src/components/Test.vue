@@ -9,7 +9,7 @@
         </ul>
         <button v-on:click="greet">Say Greeting</button>
         <br />
-        <input type="text" v-on:keyup="pressed">
+        <input type="text" v-on:keyup="pressed" v-on:keyup.enter="hitEnter">
     </div>
 </template>
 
@@ -39,6 +39,9 @@ export default {
         },
         pressed: function(e){
             console.log(e.target.value);
+        },
+        hitEnter: function (){
+            console.log('you hit enter man!')
         }
     }
 }
