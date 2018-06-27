@@ -44,6 +44,15 @@ export default {
         }
     },
     methods:{
+        addUser: function(e){
+           // console.log('add');
+           this.users.push({
+               name: this.newUser.name,
+               email: this.newUser.email,
+               contacted: false
+           });
+            e.preventDefault();
+        }
         
     },
 }
