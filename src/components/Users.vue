@@ -16,7 +16,17 @@ export default {
                     name: 'Lotanna Nwose',
                     email: 'vic@gmail.com',
                     contacted: false
-                }
+                },
+                {
+                    name: 'tanna Nse',
+                    email: 'Nic@gmail.com',
+                    contacted: false
+                },
+                {
+                    name: 'Lotan Nwos',
+                    email: 'vicy@gmail.com',
+                    contacted: false
+                },
             ]
         }
     },
