@@ -41,7 +41,7 @@ export default {
             console.log(e.target.value);
         },
         hitEnter: function (){
-            console.log('you hit enter man!')
+            console.log('you hit enter man!');
         }
     }
 }
