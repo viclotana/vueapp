@@ -9,7 +9,7 @@
         </ul>
         <button v-on:click="greet('hi man!')">Say Greeting</button>
         <br />
-        <input type="text" v-on:keyup="pressKey">
+        <input type="text" v-on:keyup="pressed">
     </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
         greet: function(greeting){
             alert(greeting);
         },
-        pressKey: function(event){
+        pressed: function(event){
             console.log(event.target.value);
         }
     }
