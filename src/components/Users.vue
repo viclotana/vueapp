@@ -11,7 +11,7 @@
        <ul>
            <li v-for="user in users" v-bind:key="user.name">
             <input type="checkbox" class="toggle" v-model="user.contacted">
-            <span :class="{{contacted: user.contacted}}">
+            <span :class="{contacted: user.contacted}">
                {{user.name}}:{{user.email}}
             </span>
            </li>
