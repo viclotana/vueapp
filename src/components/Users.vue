@@ -66,6 +66,7 @@ export default {
 }
 </script>
 <style scoped>
+
     .contacted{
         text-decoration: line-through;
     }
