@@ -4,7 +4,6 @@ import Vue from 'vue'
 import vueResource from 'vue-resource'
 import App from './App'
 import VueRouter from 'vue-router'
-import router from './router'
 import Users from './components/Users'
 import Test from './components/Test'
 
