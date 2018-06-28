@@ -56,6 +56,9 @@ export default {
                contacted: false
            });
             e.preventDefault();
+        }, 
+        deleteUser: function(){
+            console.log('delete this shit');
         }
         
     },
