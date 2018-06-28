@@ -58,7 +58,8 @@ export default {
             e.preventDefault();
         }, 
         deleteUser: function(){
-            console.log('delete this shit');
+           // console.log('delete this shit')
+           this.users.splice(this.users.indexOf(user), 1);
         }
         
     },
