@@ -28,23 +28,7 @@ export default {
     data(){
         return {
             newUser: {},
-            users: [
-                {
-                    name: 'Lotanna Nwose',
-                    email: 'vic@gmail.com',
-                    contacted: false
-                },
-                {
-                    name: 'tanna Nse',
-                    email: 'Nic@gmail.com',
-                    contacted: false
-                },
-                {
-                    name: 'Lotan Nwos',
-                    email: 'vicy@gmail.com',
-                    contacted: false
-                },
-            ]
+            users: []
         }
     },
     methods:{
@@ -63,6 +47,13 @@ export default {
         }
         
     },
+    created: function(){
+        //console.log('created ran oh...')
+        this.$http.get('https://jsonplaceholder.typicode.com/users')
+            .then(function(response){
+                this.users = response.data;
+            });
+    }
 }
 </script>
 <style scoped>
