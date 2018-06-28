@@ -13,6 +13,7 @@
             <input type="checkbox" class="toggle" v-model="user.contacted">
             <span :class="{contacted: user.contacted}">
                {{user.name}}:{{user.email}}
+               <button v-on:click="deleteUser">x</button>
             </span>
            </li>
        </ul>
