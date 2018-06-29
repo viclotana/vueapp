@@ -8,6 +8,7 @@
             <br />
             <input type="submit" value="submit">
        </form>
+       
        <ul>
            <li v-for="user in users" v-bind:key="user.name">
             <input type="checkbox" class="toggle" v-model="user.contacted">
